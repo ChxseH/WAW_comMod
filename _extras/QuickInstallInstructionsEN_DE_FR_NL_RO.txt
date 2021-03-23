@@ -1,0 +1,49 @@
+English :
+
+1) Create a folder "commodv2" in your mods/ directory on your server. If the mods/ folder doesn`t exist you
+need to create this in the same location as the main/ and pb/ folders
+
+2) Upload the files z_svr_v2_commod.iwd, z_v2_commod.iwd and mod.ff to the folder "commodv2" you created.
+
+3) Start the mod from your servers command line.
+
+
+Deutsch (Ty Arrax) :
+
+1) Erstellen Sie einen Ordner "commodv2" im mods/ Verzeichnis auf dem Server. Falls das Verzeichnis mods/ nicht
+existieren sollte, müssen Sie dieses im Hauptverzeichnis des Spiels, wo sich auch die Ordner pb/ und main/ befinden, erstellen.
+
+2) Laden Sie die Dateien z_svr_v2_commod.iwd, z_v2_commod.iwd und mod.ff in den erstellten Ordner "commodv2" hoch.
+
+3) Starten Sie die Mod von Ihrem Server aus der Command-Line.
+
+
+Français :
+
+1) Créer un dossier "commodv2" dans votre répertoire mods/ sur votre serveur. Si le dossier mods/ n'existe pas vous
+devez le créer dans le même emplacement que le dossier main/ et pb/
+
+2) Envoyez les fichiers z_svr_v2_commod.iwd, z_v2_commod.iwd et mod.ff vers le dossier "commodv2" que vous avez créé.
+
+3) Démarrez le mod de votre serveur à partir de la ligne de commande.
+
+
+Dutch (Ty Atherios) : 
+
+1) Maak een map "commodv2" in u mods/ directory van u server. Als de mods/ map niet bestaat moet u die maken in de zelfde
+locatie als de main/ en pb/ maps.
+
+2) Upload de bestanden z_svr_v2_commod.iwd, z_v2_commod.iwd en mod.ff in de map "commodv2" die u heeft gemaakt.
+
+3) Start de mod via u server command line.
+
+
+Romana (Ty Matt) :
+
+1) Creati un folder numit "commodv2" in sectiunea mods/ al serverului dumneavoastra. Daca folderul mods/ nu exista
+trebuie sa creati unul in aceasi locatie ca si folderele main/ si pb/
+
+2) Upload-ati fisierele "z_svr_v2_commod.iwd", "z_v2_commod.iwd" si "mod.ff" in folderul pe care tocmai l-ati creat 
+(commodv2)
+
+3) Porniti modul din comanda de pornire a serverului.

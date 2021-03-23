@@ -1,0 +1,313 @@
+V2 :-
+
+- Added shoutcaster mode for live streaming and spectating of matches etc
+- Added save class set-up feature. Auto saving your last class for the next game (when fs_game folder is kept standard)
+- Added the ability to specify "auto-assign only" in public modes with :- set commod_autoassign 1
+- Added Grenadetest (Strat) mode to follow the flight path of a grenade when thrown
+- Added 1.6 updates and files required for map pack 3 maps
+
+- Removed constant setting of first person mode and replaced with blur/sound inconvenience only reducing resources used.
+
+- Improved the aesthetics of the weapon selection menu
+
+- Moved players left counters to the HUD for easy removal in frag movies etc
+
+- Cleaned up internal code removing unnecessary calls to functions that aren`t required for a competitive game
+
+- Fixed a bug in which r_normalmap wasn`t saved for future games on certain occasions
+
+- Barrel damage corrected to CM 1.8 levels
+
+V1.9 :-
+
+	- Changed plant & defuse points from 10 to 3.
+	- Changed timeout countdown from seconds to minutes & seconds
+	- Changed team names like Marine Raiders Eliminated to generic names such as Attack Eliminated
+
+	- Added further protection against invalid values on certain settings improving standardisation
+	and disabling the use of certain cvars which are "allowed" to be changed by a user but result in
+	cheat type effects such as the removal of large objects etc. Thus blocking commands such as
+	modellimit, dobjlimit, sizecull & compassplayerheight/width outside normal ranges with the introduction
+	of obscuring the screen and annoyance of repeated sound until the settings are corrected.
+
+	- Added support for Map Pack 2 maps, mp_kwai, mp_stalingrad & mp_docks (with removal of thunder sound on mp_docks)
+	- Added stock updated glitch/stick fixes to Shrine, Suburban, Makin, Makin Day, Roundhouse, Downfall,
+	Asylum, Subway, Seelow, Outskirts, Hangar & Castle
+	- Added a fix to stop a glitch with both rocks on Shrine being completely see through when leaning in to
+	- Added score display when you kill, defuse, plant, teamkill etc
+	- Added the ability to use the sawn-off "attachment" on the double barreled shotgun offering greater spread
+	and power but with less range
+	- Added "snipers" only and "snipersgp" only mode (eg; /rcon commod_mode public_10 snipersgp)
+	- Added the ability to select Stielhandgranate as a primary grenade
+	- Added hit damage inflicted & location information in pre-match ready-up mode
+	- Added comMod Graphics quick menu accessable by B then 5 in game. Allowing the ability to change values
+	such as :- 
+
+	r_normalmap Unchanged, Flat
+	r_specularcolorscale 0, 1, 2
+	r_blur 0, 0.2, 0.4, 0.6, 0.8, 1
+	r_lighttweaksunlight 0.1, 0.6, 1.2, 1.6
+
+	While retaining your choices for future comMod games.
+
+	- Fixed a bug in which timeout limit was set per side and not per team
+	- Fixed a bug in public rifles only mode in which STG was available
+	- Fixed a bug in private rifles only mode in which 1 sniper was available
+	- Fixed SVT/Gewehr lower torso damage which was set incorrectly lower than it should be
+	- Fixed a problem in which the bomb site on Castle, Makin & Makin Day disappeared when viewed from a certain
+	angle/distance leaving a player planting clearly visable
+	- Fixed a bug in which headbob came back at the last seconds of a round after bomb explodes
+	- Fixed a bug in which -5 wasn`t deducted from your score when you made a teamkill
+
+	- Reduced damage to the lower leg & through objects such as walls of the DP28, Type99LMG & Bar
+	- Reduced firerate & increased damage slightly of PPSH
+	- Reduced the firerate of Gewehr, SVT & m1 Carbine to reduce the use of roller fire
+	- Increased recoil slightly of the BAR
+	- Increased damage/range slightly of Molotov & added 5s explode time in hand
+	- Increased spread of fire when shooting from the hip for DP28 & Type 99 LMG
+	- Increased rate of fire of the MP40
+
+	- Limited Light Gunners to 3 per team
+
+	- Removed the choice of silencer/flash hider on STG & M1A1 Carbine
+	- Removed the ability to throw back grenades
+
+V1.8 :-
+
+	- Limited heavy gunners to 2 per team in match (private) modes
+
+	- Increased the spread of fire slightly for BAR when firing from the hip
+
+	- Reverted back to forced sv_fps 20 to improve FPS and overall smoothness client side
+
+	- Reduced the range of both shotguns
+	- Reduced the spread of fire of all sniper rifles when firing from the hip
+	- Reduced the damage caused from barrel explosions by 62%
+
+	- Removed headbob to increase hit reg and FPS
+	- Removed useless rank information on map change countdown menu
+
+	- Added a small pause at the end of round scores/before new round
+
+	- Fixed a bug in public mode in which if enabled the end of each killcam was missing
+	- Fixed a bug in CTF mode in which team sides didn`t swap
+	- Fixed player skins so there are a range of player skins depending on weapon class
+	- Fixed side names after bomb plant, previously would change back to default CoD:WW names (Red Army etc.)
+	- Fixed shotguns so they do not drop weapon on death (no shotgun pickups)
+	- Fixed a public mode SD bug by disallowing the planting of a bomb if < 2 players on the server causing the
+	  round to never end and a new round start.
+
+	- Added the ability to have more than 1 sniper/shotgun in deathmatch (FFA) mode
+	- Added the ability to require a shot fired anywhere each respawn before being able to be killed in RUP mode
+	- Added improved IWD file checks to stop tampering with comMod internal files
+
+V1.7 :-
+
+	- Fixed sniper/shotgun limiting bug
+	- Fixed player left icons to remove overlaps on double figure players
+
+	- Re-Introduced sound files from 1.5 for improved sound on planting/defusing annoucements etc
+
+	- Added the ability to control killcam on/off in public modes
+
+V1.6 :-
+
+	- Added server sided security checks so certain crucial dvars can`t be edited without warning
+	  aswell as warning against settings like devmap etc.
+	- Added IWD check to warn if comMod files have been altered
+	- Added mod version and mode in strat time & round end
+	- Added the possibility for players to enable shadows (disabled by default)
+	- Added the ability to name .log files in server.cfg rather than mod controlled
+	- Added the ability to control friendly fire on/off in public modes in the server.cfg
+	- Added comMod tips on map loading screens
+	- Added Deathmatch mode text
+	- Added the ability to change your weapon 5 seconds into each round if no shots have been fired
+	- Added required 1.4 map files
+
+	- Fixed a bug in some custom maps where the player became invisible
+	- Fixed a bug on the first half if the time ran out on a timeout then there was no halftime RUP mode
+	- Fixed sniper & shotgun limiting where the weapons became unavailable
+	- Fixed bug on Castle, Suburban, Hangar & Asylum in which the bomb site wasn`t visable from long range
+	  causing players to be clearly visable when planting etc.
+
+	- Changed "rifles" only mode to bolt rifles only (semi-rifles now disabled)
+
+	- Removed "create squad" button on menus
+	- Removed rank icon on scoreboard
+	- Removed player freeze on scores screen, allowing free movement while scores displayed
+	- Removed strat time in public modes
+	- Removed Destroy & Defend the objective sounds
+
+	- Increased the recoil of Type 99 LMG, DP28, SVT40 & Gewehr
+	- Increased torso & upper/lower arms, lower legs, hands & feet damage of SVT40 & Gewehr
+	- Increased the torso & upper arms damage of Magnum pistol
+	- Increased head damage of M1 Carbine
+
+	- Reduced the range of BAR & DP28 by 10%
+	- Reduced the range of SVT40 & Gewehr by 10%
+	- Reduced the clip size of DP28 from 47 to 30
+	- Reduced the damage slightly of bolt rifles to stop 1 shot kills through thick walls
+	- Reduced the damage to the head/neck of BAR
+	- Reduced the recoil and slight range of STG-44
+	- Reduced the size of the mod.ff file by 135k
+
+V1.5 :-
+
+	- Added DisabledUnifiedSpawning for improved spawning on multilives gametypes
+	- Added the ability to disable comMod hostname branding with "set commod_nobranding 1"
+	- Added shorter hostname branding (enabled by default) which will be displayed as CM 1.5|
+	- Added comMod Advanced options in Options -> Multiplayer Options
+	- Added Rifles only mode, enabled by commod_mode [mode] rifles (eg. commod_mode private_10 rifles)
+	- Added player_breath_hold_lerp 4 to improve sniper breath holding speed and hit reg issues
+
+	- Removed sway when ADS from all non-scoped weapons fixing CoD:WW hit registration issues
+	- Removed rank 1 text from scoreboard
+	- Removed rank icon and rank "1" from above player heads
+
+	- Increased the recoil of M1 Carbine
+	- Increased the recoil and reduced the head damage of STG-44
+	- Increased the damage of PPSH slightly
+
+	- Reduced the range of Double Barreled Shotgun & Trench gun
+	- Reduced the speed and distance of sprint of Type 99 LMG by 0.15
+	- Reduced the speed and distance of sprint of DP28 by 0.15
+	- Reduced the speed and distance of sprint of BAR by 0.1
+
+	- Disabled create squad button
+
+	- Fixed crash on Makin when in CTF mode
+	- Fixed graphics menu bug
+
+V1.4 :-
+
+	- Added shoot to die in RUP mode. If you don`t shoot you can`t be killed in RUP mode.
+	- Added stopping power to all weapons
+	- Added the ability to change FoV, Max FPS & Max Packets manually via the Options, Graphics Menu ingame.
+	- Added the ability to select Private, 2v2 & 1v1 (Match) mode timelimits for CTF, DOM, HQ, TDM & SAB gametypes (Default, 10)
+	- Added support for Sabotage gametype
+	- Added Makin Day files required from V1.2 CoD:WW Patch
+	- Added ALL CoD:WW V1.2 map patches for Hangar, Downfall, Castle, Suburban, Shrine, Seelow, Roundhouse, Makin & Outskirts
+	- Added 5 seconds "match starting" before first round strat time
+
+	- Increased recoil for STG-44 & Thompson
+	- Increased bullet impact damage of Kar98k inline with the other bolt rifles
+
+	- Lowered public halftime strat time from 15 to 10.
+
+	- Removed headbob on snipers while holding breath scoped and moving
+	- Removed the ability to throw a nade/flare/smoke in strat time
+	- Removed rank/experience window at the end of game
+	- Removed death location icon
+	- Removed hit blip when shooting through walls
+	- Removed match bonus text
+
+	- Fixed Attack/Defence names on Downfall, Seelow & Roundhouse
+	- Fixed bug in which the server would crash if 2v2 mode entered incorrectly
+	- Fixed Koth public timelimit bug in which the time would never end
+
+	- Public mode timelimits for SD will follow server.cfg settings
+
+	- Changed weapon damage on the majority of weapons (see additional weapon guide)
+
+
+V1.3 :-
+
+	- Removed JP, GE & RU "We've got the bomb" SFX in SD inline with the US removal from previous versions
+	- Removed the PTRS-41 anti-tank sniper from weapon selection
+
+	- Fixed Capture The Flag missing sounds
+	- Fixed 2v2 rounds bug in which only 2 rounds played before switch and 2 before end
+	- Fixed 1 sniper per team bug in which sniper sometimes became unselectable
+	- Fixed solider type & flags for maps Asylum, Dome, Downfall, Outskirts, Roundhouse & Seelow
+	- Fixed all snipers raise and drop time inline with springfield
+	- Fixed map hole bug on Downfall in which players could go under the map
+	- Fixed map hole bug on Roundhouse in which players could go under the map
+	- Fixed public rotation bug in which rotation wasn`t being followed or first map played twice
+	- Fixed dead can talk to living bug
+
+	- Introduced 1 shotgun limit per team
+	- Introduced longer SD round time, increased from 1:45 to 2:00
+
+	- Added MRxx to mode name text in RUP mode
+	- Added 15 second strat time for halftime on public mode
+	- Added force sv_fps 30 and fixed sv_fps timing bug
+	- Added 1v1 mode
+	- Added Domination gametype & fixed domination sounds
+	- Added switching side message/pause for TDM mode
+	- Added players left HUD feature
+
+	- Improved weapon disable in strat time to eliminate nade drop problem
+
+	- Public mode timelimits for CTF, HQ, TDM & DOM will follow server.cfg settings
+	-- scr_koth_timelimit
+	-- scr_tdm_timelimit
+	-- scr_ctf_timelimit
+	-- scr_dom_timelimit
+
+	- Reduced the size of the mod.ff file by 120k
+	- Reduced the size of the client side .iwd file by 145k
+
+V1.21b - v1.23b :-
+
+	- Fixed roundswitch bug
+	- Fixed get Bomb in Public mode bug
+	- Fixed TDM scores @ side swap bug
+	- Fixed timeout in public mode bug
+	- Fixed HQ & TDM modes
+	- Fixed round/score bug in which scores over counted giving the impression too many rounds
+	- Fixed Makin & Roundhouse crash bug which crashed the server when map loaded
+
+V1.2b :-
+
+	- NEW Class/Weapon selection menu allowing a large range of guns - rifles, bolts, smgs, mgs, snipers & more!
+	- Range of pistols now user selectable
+	- Frag nade or Molotov selectable
+	- Smoke or Flare selectable
+
+	- Added CTF, HQ & TDM gametypes
+	- Added 2v2_ & 2v2hc_ modes (2 vs 2 Mode, No Snipers, No Shotguns)
+
+	- .375 Magnum damaged reduced inline with other pistols
+	- All bolt rifles damage increased to 1 shot kill (upper torso, head, neck, upper arms & upper legs)
+	- All bolt rifles recoil increased
+	- All snipers damage increased to 1 shot kill (upper torso, head, neck, upper arms & upper legs)
+	- All light/heavy gunner weapons recoil increased
+	- Snipers do not drop weapon on death (no sniper pickups)
+
+	- Added comMod quick menu (Default accessable by key 'B', option '4')
+	- Added Suicide (Under comMod quick menu)
+	- Added Drop Bomb (Under comMod quick menu)
+	- Added Call TimeOut (Under comMod quick menu)
+
+	- Removed the ability to ready up in match mode if there is only 1 person on the server
+	- Added current mode text to the top right hand side in RUP mode
+	- Added generic pickup and drop bomb sounds for S&D
+	- Disabled the use of the bomb (S&D) and flags (CTF) in pre-match RUP mode 
+	- Introduced CoD:WW 1.0.1017 map bug/hole fixes
+	- Fixed public map rotation (now follows server.cfg rotation)
+	- Fixed bug in public mode in which maps would constantly rotate if only 1 player on the server
+	- Fixed bug if you changed game modes in strat time no players would be able to move
+	- Fixed bug in which Mosin rifle users had 2 frag grenades
+
+v1.1b :-
+
+	- Fixed & improved the distance in which you can hear plant/defuse sounds
+	- Introduced greater recoil on Thompson, MP40 & STG-44
+	- 3rd person spectating disabled
+	- Disabled weapons & ability to kill in strat time
+	- Fixed reconnect/late connect spawn bug, now you won`t spawn mid round if it is in play
+	- Fixed bug, "We've got the bomb" sound didn`t always play on certain maps
+	- Fixed 24 round bug in which the match was switching at 12 rounds but ending on 20
+	- Fixed dual bomb defused voice sounds, now only commod sound, no Ger, Rus, Jap or US voice plays
+	- Ghillie-style player camo removed from rifle players, retained for snipers only
+	- Improved RUP key recognition
+	- Added Press Use Key to ready up message in RUP mode
+	- Optimised internal code removing unnesseccary files
+
+v1.0b :-
+
+	- Custom weapon select menu introduced
+	- Team kill with no death in Ready-Up mode introduced (must be put in a private mode to kick this off)
+	- Fixed missing sound alias spam in console on Airfield map
+	- Promod look up/down weapon selection removed
+	- Mode names changed to commod_mode public_10 etc.
